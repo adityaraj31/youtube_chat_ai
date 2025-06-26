@@ -17,7 +17,7 @@ try:
     # Get transcript
     transcript_list = YouTubeTranscriptApi.get_transcript(video_id, languages=["en"])
 
-    # Flatten to plain text
+    # Flatten to plain text  ...
     transcript = " ".join(chunk["text"] for chunk in transcript_list)
     print(transcript)
 
